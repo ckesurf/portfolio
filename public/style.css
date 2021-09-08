@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:699px) {
+    #desktop-links {
+        display: none;
+    }
+}
+
+@media screen and (min-width:700px) {
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    min-width: 100%;
+}
