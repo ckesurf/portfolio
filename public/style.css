@@ -20,3 +20,11 @@ header {
     border-radius: 50%;
     min-width: 100%;
 }
+
+.is-long {
+    padding-bottom: 14rem;
+}
+
+.overlaps-top {
+    margin-top: -14rem;
+}
