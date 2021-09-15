@@ -9,24 +9,35 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <!-- JavaScript Bundle with Popper (needed for collapsing menu)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- jQuery library...for....collapse I guess? We'll see if this works -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <header class="navbar navbar-expand-md navbar-dark bd-navbar">
-            <nav class="container-xxl flex-wrap flex-md-nowrap">
-                <a class="navbar-brand p-0 me-2" href="/">
-                    <img class="d-block my-1" src="img/c_logo.png" width="40" height="32">
-                </a>
-                <i id="hamburger-menu" class="material-icons">menu</i>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation"></button> -->
-
-
-            </nav>
-        </header>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <a class="navbar-brand p-0 me-2" href="index.html">
+                <img class="d-block my-1" src="img/c_logo.png" width="40" height="32">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="mentor.html">Mentorship</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <main>
         <section id="intro" class="text-center m-5">
             <h1>Fullstack Developer</h1>
@@ -49,17 +60,20 @@
             <div class="card shadow-lg" style="width: 18rem;">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <i class="symbol">some_icon_representing_fullstack</i>
+                        <i class="material-icons">laptop_mac</i>
+                        <i class="material-icons">storage</i>
+                        <i class="material-icons">web</i>
                         <h5 class="card-title">Fullstack Developer</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </li>
-                    <li class="list-group-item">
+                    <!-- <li class="list-group-item">
                         <i class="symbol">some_icon_representing_negotiation</i>
                         <h5 class="card-title">Negotiation and Conflict Resolution</h5>
                         <p class="card-text">Negotiation, Mediation, NVC</p>
-                    </li>
+                    </li> -->
                     <li class="list-group-item">
-                        <i class="symbol">some_icon_representing_mentor</i>
+                        <i class="material-icons">supervisor_account</i>
+                        <i class="material-icons">contact_support</i>
                         <h5 class="card-title">Mentor</h5>
                         <p class="card-text">I will learn you somethin</p>
                     </li>
