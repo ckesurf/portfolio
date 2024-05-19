@@ -17,6 +17,15 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="./app.js"></script>
+
+    <!-- For social media icons? -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -97,12 +106,15 @@
             </div> -->
         </section>
     </main>
-    <footer>
-        <!-- logo -->
-        <!-- Social media icons -->
-        <!-- Github -->
-        <!-- LinkedIn -->
-    </footer>
+    <div class="template-demo">
+        <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded">
+            <i class="fa fa-linkedin"></i>
+        </button>
+        <button type="button" class="btn btn-social-icon btn-github btn-rounded">
+            <i class="fa fa-github"></i>
+        </button>
+    </div>
+    <div id="root-footer"></div>
 </body>
 
 </html>
