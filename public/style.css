@@ -38,11 +38,13 @@ header {
 }
 
 .template-demo>.btn {
-    margin-right: 0.5rem !important
+    /* margin-right: 0.5rem !important */
+    margin: 0.5rem
 }
 
 .template-demo {
-    margin-top: 0.5rem !important
+    margin-top: 0.5rem !important;
+    display: flex;
 }
 
 .btn.btn-rounded {
@@ -68,4 +70,54 @@ header {
 .btn-linkedin:focus {
     background: #015682;
     color: #ffffff
+}
+
+
+/* Ugh this is not dry but whatever */
+
+.btn-outline-github {
+    border: 1px solid #0177b5;
+    color: #0177b5
+}
+
+.btn-outline-github:hover {
+    background: #0177b5;
+    color: #ffffff
+}
+
+.btn-github {
+    background: #0177b5;
+    color: #ffffff
+}
+
+.btn-github:hover,
+.btn-github:focus {
+    background: #015682;
+    color: #ffffff
+}
+
+
+/* End non-DRYness */
+
+#logo {
+    max-width: 40px;
+}
+
+#reel {
+    display: block;
+    margin: auto
+}
+
+#resume-cards {
+    max-width: 75%;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade-in-image {
+    animation: fadeIn 5s;
 }

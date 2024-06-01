@@ -15,7 +15,6 @@
     <!-- jQuery library...for....collapse I guess? We'll see if this works -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- React -->
@@ -26,6 +25,7 @@
 
     <!-- For social media icons? -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/style.css">
 </head>
 
 <body>
@@ -33,47 +33,57 @@
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <a class="navbar-brand p-0 me-2" href="index.html">
-                <img class="d-block my-1" src="public/img/c_logo.png" width="40" height="32">
+                <img id="logo" class="d-block my-1" src="public/img/c_logo.png">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="mentor.html">Mentorship</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                </div>
-            </div>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+            <!-- <a class="nav-link" href="mentor.html">Mentorship</a> -->
+            <!-- <a class="nav-link" href="#">Pricing</a> -->
+            <!-- </div>
+            </div> -->
         </div>
     </nav>
     <main>
         <section id="intro" class="text-center m-5 d-flex flex-column align-items-center">
-            <h1>Fullstack Developer</h1>
-            <h1>Negotiation Coach</h1>
-            <h1>Mentor</h1>
-            <h2 class="text-muted">I make stuff, and I mentor students</h2>
-            <img class="rounded-circle img-fluid my-5 hero-img mx-5" src="public/img/headshot.jpg">
-            <img class="img-fluid hero-img" src="public/img/computer.png">
+            <h1 class="fade-in-image">Creating learning experiences to realize your potential</h1>
+            <!-- <h1>+</h1> -->
+            <h1></h1>
+            <!-- <h1>+</h1> -->
+            <h1></h1>
+            <h2 class="text-muted">Instructor</h2>
+            <h2 class="text-muted">Instructional Designer</h2>
+            <h2 class="text-muted">Full Stack Software Engineer</h2>
+            <img id="headshot" class="rounded-circle img-fluid my-5 hero-img mx-5 chrisheadshot" src="public/img/headshot.jpg">
+            <!-- <img class="img-fluid hero-img" src="public/img/computer.png"> -->
         </section>
         <section id="about" class="bg-info p-5">
             <div class="container is-long">
-                <h2 class="display-4">Hi, I'm Chris. Nice to meet you</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis quam odio, sit amet viverra erat tincidunt venenatis.</p>
-                <p>B.A. in Management Engineering from Pitzer College</p>
-                <p>B.S. in Computer Science from Columbia Engineering</p>
+                <h2 class="display-4">Hi! I'm Chris.</h2>
+                <h3>I design experiences students need to pursue the careers of their dreams</h3>
+                <iframe id="reel" src="https://www.youtube.com/embed/hLstbmvcXyo?si=Q18q9D7V-HPHEI4W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
             </div>
         </section>
         <section id="skills" class="overlaps-top d-flex justify-content-center mb-5">
 
-            <div class="card shadow-lg" style="width: 18rem;">
+            <div id="resume-cards" class="card shadow-lg">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <i class="material-icons">laptop_mac</i>
-                        <i class="material-icons">storage</i>
-                        <i class="material-icons">web</i>
-                        <h5 class="card-title">Fullstack Developer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <i class="material-icons">school</i>
+                        <h3 class="card-title">Instructor</h3>
+                        <h6>DevelopIntelligence</h6>
+                        <p class="card-text">Provide feedback on curriculum for Fortune 500 enterprise clients. Lead onboarding bootcamps for newly hired DevOps engineers.
+                        </p>
+                        <h6 class="card-text">Flatiron x Yale</h6>
+                        <p class="card-text">Taught the Yale x Flatiron School Web Development Bootcamp, which carries two Yale College credits.
+                        </p>
+                        <h6 class="card-text">Flatiron</h6>
+                        <p class="card-text">Guided students on their journey to becoming fullstack Software Engineers using Javascript/React for frontend and Ruby on Rails + Python/Flask for backend. Both remote and in-person synchronous cohorts.
+                        </p>
                     </li>
                     <!-- <li class="list-group-item">
                         <i class="symbol">some_icon_representing_negotiation</i>
@@ -81,38 +91,37 @@
                         <p class="card-text">Negotiation, Mediation, NVC</p>
                     </li> -->
                     <li class="list-group-item">
-                        <i class="material-icons">supervisor_account</i>
-                        <i class="material-icons">contact_support</i>
-                        <h5 class="card-title">Mentor</h5>
-                        <p class="card-text">I will learn you somethin</p>
+                        <i class="material-icons">laptop_mac</i>
+                        <h3 class="card-title">Software Engineering/DevOps</h3>
+                        <p class="card-text">Rent The Runway</p>
+                        <ul>
+                            <li><strong>PCI Compliance</strong> - Setup SonarQube(7.9.1) for quality gating and vulnerability checks</li>
+                            <li><strong>Capistrano -> Ansible</strong> - Reduced total live deployment time from 1 hour to ~7m, by migrating from Capistrano to RPM via Ansible.</li>
+                            <li><strong>Dockerizing the app</strong> - Prototyped usage of Docker by containerizing the storefront app, then using it to run live acceptance tests on pull requests</li>
+                            <li><strong>Full Stack</strong> - Coded features such as a style quiz to power the customer's recommendation carousel, and optional dress upgrades post-checkout. Upgraded the in-house UI for stylists. Configured inventory service
+                                to consider multiple warehouses instead of just one.</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="material-icons">history_edu</i>
+                        <h3 class="card-title">Education</h3>
+                        <p class="card-text">B.S. in Computer Science from Columbia Engineering</p>
+                        <p class="card-text">B.A. in Management Engineering from Pitzer College</p>
                     </li>
                 </ul>
             </div>
-
-
-            <!-- <div>
-                <i class="symbol">some_icon_representing_negotiation</i>
-                <h2>Negotiation and Conflict Resolution</h2>
-                <ul>
-                    <li>Negotiation, Mediation, NVC</li>
-                </ul>
-            </div>
-            <div>
-                <i class="symbol">some_icon_representing_mentor</i>
-                <h2>Mentor</h2>
-                <ul>
-                    <li>figma</li>
-                </ul>
-            </div> -->
         </section>
     </main>
     <div class="template-demo">
-        <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded">
-            <i class="fa fa-linkedin"></i>
-        </button>
-        <button type="button" class="btn btn-social-icon btn-github btn-rounded">
+        <a href="https://www.linkedin.com/in/chris-erlendson-3134aa27/" target="_blank" class="btn btn-social-icon btn-linkedin btn-rounded footer-btn">
+            <i class="fa fa-linkedin">
+                
+            </i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/chris-erlendson-3134aa27/" target="_blank" class="btn btn-social-icon btn-github btn-rounded footer-btn">
             <i class="fa fa-github"></i>
-        </button>
+        </a>
     </div>
     <div id="root-footer"></div>
 </body>
