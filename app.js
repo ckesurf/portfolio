@@ -17,7 +17,7 @@ const Footer = () => {
     );
 }
 
-ReactDOM.render(
-    <Footer />,
-    document.getElementById('root-footer')
-);
+// ReactDOM.render(
+//     <Footer />,
+//     document.getElementById('root-footer')
+// );
